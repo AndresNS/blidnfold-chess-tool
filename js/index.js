@@ -1,10 +1,10 @@
 const columns = ["a", "b", "c", "d", "e", "f", "g", "h"];
 const rows = [1, 2, 3, 4, 5, 6, 7, 8];
 
-const square = document.querySelector(".square");
-const answer = document.querySelector(".answer");
-const blackButton = document.querySelector(".black");
-const whiteButton = document.querySelector(".white");
+const square = document.querySelector(".chess-tool__square");
+const answer = document.querySelector(".chess-tool__answer");
+const blackButton = document.querySelector(".chess-tool__controls__button.black");
+const whiteButton = document.querySelector(".chess-tool__controls__button.white");
 let currentSquare = {};
 
 window.onload = function () {
@@ -12,25 +12,52 @@ window.onload = function () {
     square.textContent = currentSquare.name;
 }
 
+document.addEventListener("keydown", (e) => {
+    if (e.code == "ArrowLeft") {
+        if(guessColor("black")){
+            answer.textContent = "Correct";
+        }else{
+            answer.textContent = "Wrong";
+        }
+        currentSquare = getRandomSquare();
+        square.textContent = currentSquare.name;
+    } else if (e.code == "ArrowRight") {
+        if(guessColor("white")){
+            answer.textContent = "Correct";
+        }else{
+            answer.textContent = "Wrong";
+        }
+        currentSquare = getRandomSquare();
+        square.textContent = currentSquare.name;
+    }
+});
+
 blackButton.addEventListener("click", () => {
-    if (currentSquare.color === "black") {
-        answer.textContent = "Correct!";
-    } else {
-        answer.textContent = "Wrong!";
+    if(guessColor("black")){
+        answer.textContent = "Correct";
+    }else{
+        answer.textContent = "Wrong";
     }
     currentSquare = getRandomSquare();
     square.textContent = currentSquare.name;
 });
 
 whiteButton.addEventListener("click", () => {
-    if (currentSquare.color === "white") {
-        answer.textContent = "Correct!";
-    } else {
-        answer.textContent = "Wrong!";
+    if(guessColor("white")){
+        answer.textContent = "Correct";
+    }else{
+        answer.textContent = "Wrong";
     }
     currentSquare = getRandomSquare();
     square.textContent = currentSquare.name;
 });
+
+function guessColor(color) {
+    if(currentSquare.color === color){
+        return true;
+    }
+    return false;
+}
 
 function getRandomSquare() {
     const colIndex = getRandomInt(8);

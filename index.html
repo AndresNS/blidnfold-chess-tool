@@ -10,7 +10,6 @@
     <main>
         <!-- Sites -->
         <section class="sites">
-            <h1 class="sites__title">Links</h1>
             <div class="sites__links">
                 <a class="sites__links__item" href="https://www.twitch.tv/"><img src="img/twitch.svg" alt="Twitch"></a>
                 <a class="sites__links__item" href="https://www.youtube.com/"><img src="img/youtube.svg" alt="YouTube"></a>
@@ -20,12 +19,14 @@
 
         <!-- Chess Tool-->
         <section class="chess-tool">
-            <h1 class="square"></h1>
+            <h1 class="chess-tool__square"></h1>
         
-            <button class="black">Black</button>
-            <button class="white">White</button>
+            <div class="chess-tool__controls">
+                <button class="black chess-tool__controls__button"><div class="arrow arrow-left"></div></button>
+                <button class="white chess-tool__controls__button"><div class="arrow arrow-right"></div></button>
+            </div>
         
-            <p class="answer"></p>
+            <p class="chess-tool__answer">&nbsp;</p>
         </section>
     </main>
 

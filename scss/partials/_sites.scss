@@ -2,18 +2,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    &__title {
-
-    }
-
+    background-color: #38383d;
+    border-radius: 5px;
+    padding: 2em;
     &__links {
         display: flex;
         justify-content: center;
         
         &__item{
+            margin-top: 0;
             padding: 1em 1.4em;
             max-width: 7em;
-            border-radius: 7px;
+            border-radius: 5px;
             transition: background-color .3s ease-in-out;
             img {
                 max-width: 100%;
@@ -21,7 +21,7 @@
             }
     
             &:hover {
-                background-color: rgb(56, 56, 61);
+                background-color:#46464c;
             }
 
         }
