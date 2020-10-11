@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 class="square"></h1>
+    <main>
+        <!-- Sites -->
+        <section class="sites">
+            <h1 class="sites__title">Links</h1>
+            <div class="sites__links">
+                <a class="sites__links__item" href="https://www.twitch.tv/"><img src="img/twitch.svg" alt="Twitch"></a>
+                <a class="sites__links__item" href="https://www.youtube.com/"><img src="img/youtube.svg" alt="YouTube"></a>
+                <a class="sites__links__item" href="https://web.whatsapp.com/"><img src="img/whatsapp.svg" alt="WhatsApp"></a>
+            </div>
+        </section>
 
-    <button class="black">Black</button>
-    <button class="white">White</button>
+        <!-- Chess Tool-->
+        <section class="chess-tool">
+            <h1 class="square"></h1>
+        
+            <button class="black">Black</button>
+            <button class="white">White</button>
+        
+            <p class="answer"></p>
+        </section>
+    </main>
 
-    <p class="answer"></p>
-
-    <script src="index.js"></script>
+    <!-- Script -->
+    <script src="js/index.js"></script>
 </body>
 </html>
