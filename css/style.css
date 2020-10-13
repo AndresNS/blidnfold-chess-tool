@@ -38,6 +38,7 @@ main {
 .sites__links {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .sites__links__item {
   margin-top: 0;
