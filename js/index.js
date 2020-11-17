@@ -1,6 +1,7 @@
 const columns = ["a", "b", "c", "d", "e", "f", "g", "h"];
 const rows = [1, 2, 3, 4, 5, 6, 7, 8];
 
+const searchFormInput = document.querySelector(".search-bar__form__input");
 const square = document.querySelector(".chess-tool__square");
 const answer = document.querySelector(".chess-tool__answer");
 const blackButton = document.querySelector(
@@ -12,6 +13,7 @@ const whiteButton = document.querySelector(
 let currentSquare = {};
 
 window.onload = function () {
+  searchFormInput.focus();
   currentSquare = getRandomSquare();
   square.textContent = currentSquare.name;
 };
