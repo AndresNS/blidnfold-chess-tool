@@ -84,6 +84,3 @@ function getRandomSquare() {
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
-
-const searchBar = document.querySelector(".search-bar__form__input");
-const searchButton = document.querySelector(".search-bar__form__button");
