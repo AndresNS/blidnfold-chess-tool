@@ -1,0 +1,8 @@
+.todolist {
+  margin-top: var(--spacing-lg);
+}
+
+.todolist__title {
+  text-align: center;
+}
+

@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 960px;
+}
+
+.root__search-bar {
+  margin-bottom: 1rem;
+}

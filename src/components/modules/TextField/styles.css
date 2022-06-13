@@ -1,0 +1,19 @@
+.textfield {
+  background-color: var(--color-gray-light);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: var(--text-sm);
+  text-align: center;
+  letter-spacing: 0.05em;
+  transition: var(--transition-bg-color);
+}
+
+.textfield:hover {
+  background-color: var(--color-gray-accent);
+}
+
+.textfield:focus {
+  background-color: var(--color-gray-accent);
+}
