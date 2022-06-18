@@ -1,0 +1,18 @@
+.shortcut-icon {
+  background-color: var(--color-gray);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  transition: var(--transition-bg-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+}
+
+.shortcut-icon:hover {
+  background-color: var(--color-gray-light);
+}
+
+.shortcut-icon__image {
+  max-width: 100%;
+}

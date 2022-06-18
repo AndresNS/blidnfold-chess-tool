@@ -1,0 +1,41 @@
+.todolist {
+  margin-top: var(--spacing-2xl);
+}
+
+.todolist__tasks {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  background-color: var(--color-gray-light);
+}
+
+.todolist__title {
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.todolist__textfield {
+  margin-bottom: var(--spacing-xs);
+}
+
+.todolist__delete-completed {
+  text-align: center;
+  margin-top: var(--spacing-xs);
+}
+
+.todolist__delete-completed button {
+  font-size: var(--text-sm);
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--color-gray-light);
+  color: var(--color-gray-dark);
+  transition: var(--transition-bg-color);
+  cursor: pointer;
+}
+
+.todolist__delete-completed button:hover {
+  background-color: var(--color-gray-accent);
+}
+

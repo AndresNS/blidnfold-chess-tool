@@ -1,0 +1,8 @@
+.search-bar {
+  display: flex;
+}
+
+.search-bar__textfield {
+  margin-right: var(--spacing-xs);
+  flex: 1;
+}

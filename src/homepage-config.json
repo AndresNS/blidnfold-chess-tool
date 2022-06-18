@@ -1,0 +1,28 @@
+{
+  "shortcuts": [
+    {
+      "name": "Gmail",
+      "href": "https://mail.google.com/mail/u/0/#inbox",
+      "icon": "gmail.svg",
+      "enabled": true
+    },
+    {
+      "name": "Twitch",
+      "href": "https://www.twitch.tv/",
+      "icon": "twitch.svg",
+      "enabled": true
+    },
+    {
+      "name": "Chess",
+      "href": "https://www.chess.com/home",
+      "icon": "chess.png",
+      "enabled": true
+    },
+    {
+      "name": "Whatsapp",
+      "href": "https://web.whatsapp.com/",
+      "icon": "whatsapp.svg",
+      "enabled": true
+    }
+  ]
+}
