@@ -1,7 +1,14 @@
 import React from "react";
 import "./styles.css";
 
-const TextField = ({ className, placeholder, onChange, value, name }) => {
+const TextField = ({
+  className,
+  placeholder,
+  onChange,
+  value,
+  name,
+  forwardRef,
+}) => {
   return (
     <input
       className={`textfield ${className}`}
@@ -10,6 +17,7 @@ const TextField = ({ className, placeholder, onChange, value, name }) => {
       onChange={onChange}
       value={value}
       name={name}
+      ref={forwardRef}
     />
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./styles.css";
 
 import TextField from "../../modules/TextField";
@@ -10,6 +10,11 @@ const config = {
 
 const SearchBar = ({ className }) => {
   const [search, setSearch] = useState("");
+  const searchInput = useRef(null);
+
+  useEffect(() => {
+    searchInput.current.focus();
+  }, []);
 
   const handleInputChange = (event) => setSearch(event.target.value);
 
@@ -27,6 +32,7 @@ const SearchBar = ({ className }) => {
         value={search}
         onChange={handleInputChange}
         name="q"
+        forwardRef={searchInput}
       />
       <Button text={"Go"} onClick={handleSubmit} />
     </form>

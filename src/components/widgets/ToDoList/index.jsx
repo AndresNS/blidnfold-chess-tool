@@ -4,14 +4,6 @@ import "./styles.css";
 // Components
 import ToDoListItem from "../../modules/ToDoListItem";
 import TextField from "../../modules/TextField";
-import Button from "../../modules/Button";
-
-// const tasks = [
-//   { id: 1, completed: false, description: "task1" },
-//   { id: 2, completed: false, description: "task2" },
-//   { id: 3, completed: false, description: "task3" },
-//   { id: 4, completed: true, description: "task4" },
-// ];
 
 const ToDoList = () => {
   const [tasks, setTasks] = useState([]);
