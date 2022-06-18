@@ -1,5 +1,5 @@
 .shortcut-icon {
-  background-color: var(--color-gray);
+  /* background-color: var(--color-gray); */
   padding: var(--spacing-xs) var(--spacing-sm);
   transition: var(--transition-bg-color);
   border-radius: var(--border-radius);
@@ -10,7 +10,7 @@
 }
 
 .shortcut-icon:hover {
-  background-color: var(--color-gray-light);
+  background-color: var(--color-gray);
 }
 
 .shortcut-icon__image {

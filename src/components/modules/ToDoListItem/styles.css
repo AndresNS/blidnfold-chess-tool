@@ -3,7 +3,7 @@
 }
 
 .todolist-item__content {
-  background-color: var(--color-gray-dark);
+  background-color: var(--color-gray-light);
   transition: var(--transition-bg-color);
   padding: var(--spacing-xs);
   margin: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs) 0;
@@ -13,6 +13,11 @@
   align-items: center;
   flex: 1;
 }
+
+.todolist-item__content:hover {
+  background-color: var(--color-gray-accent);
+}
+
 
 .todolist-item__checkbox {
   width: 1.2rem;
@@ -40,44 +45,52 @@
   color: var(--color-white-accent);
 }
 
+.todolist-item__content:hover .todolist-item__text--completed{
+  color: var(--color-white-dark);
+}
+
 .todolist-item__text--completed {
   text-decoration: line-through;
+  color: var(--color-gray-accent-light);
 }
 
 .todolist-item__checkbox--completed {
   background-color: var(--color-primary-dark);
 }
 
-
 .todolist-item__delete {
-  background-color: var(--color-gray-dark);
+  background-color: var(--color-gray-light);
   padding: var(--spacing-xxs);
   margin: var(--spacing-xxs) 0;
   border-radius: var(--border-radius);
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 3rem;
 }
 
-.todolist-item__delete__icon {
-  width: 2rem;
-  height: 2rem;
-  color: var(--color-gray-light);
-  padding: var(--spacing-xxs);
-  border-radius: var(--border-radius);
-  transition: var(--transition-colors);
-
-}
-
-.todolist-item__delete__icon:hover {
-  cursor: pointer;
-  width: 2rem;
-  height: 2rem;
+.todolist-item__delete:hover {
   background-color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.todolist-item__delete:hover .todolist-item__delete__icon {
   color: var(--color-white);
 }
 
-.todolist-item__delete__icon:active {
+.todolist-item__delete:active {
   background-color: var(--color-secondary-light);
+}
+
+.todolist-item__delete:active .todolist-item__delete__icon {
   color: var(--color-white-light);
 }
+
+.todolist-item__delete__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--color-gray-accent);
+  border-radius: var(--border-radius);
+  transition: var(--transition-colors);
+}
+

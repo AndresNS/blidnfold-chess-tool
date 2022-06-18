@@ -7,6 +7,7 @@
   --color-gray-dark: hsl(200, 5%, 15%);
   --color-gray-light: hsl(200, 5%, 25%);
   --color-gray-accent: hsl(200, 5%, 30%);
+  --color-gray-accent-light: hsl(200, 5%, 40%);
   --color-primary: hsl(200, 50%, 35%);
   --color-primary-dark: hsl(200, 50%, 25%);
   --color-primary-light: hsl(200, 50%, 40%);
@@ -49,7 +50,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-gray);
+  background-color: var(--color-gray-dark);
   color: var(--color-white);
 }
 
