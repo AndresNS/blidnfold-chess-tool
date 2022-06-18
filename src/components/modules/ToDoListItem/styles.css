@@ -15,8 +15,8 @@
 }
 
 .todolist-item__checkbox {
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border: 3px solid var(--color-gray);
   border-radius: var(--border-radius);
   margin-right: var(--spacing-xs);
@@ -60,8 +60,8 @@
 }
 
 .todolist-item__delete__icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   color: var(--color-gray-light);
   padding: var(--spacing-xxs);
   border-radius: var(--border-radius);
@@ -71,8 +71,8 @@
 
 .todolist-item__delete__icon:hover {
   cursor: pointer;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   background-color: var(--color-secondary);
   color: var(--color-white);
 }

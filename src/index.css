@@ -22,6 +22,7 @@
   --spacing-md: 1.4rem;
   --spacing-lg: 2rem;
   --spacing-xl: 2.4rem;
+  --spacing-2xl: 3rem;
 
   --text-xs: 0.8rem;
   --text-sm: 1rem;
@@ -33,6 +34,12 @@
   --transition-all: all ease 0.3s;
   --transition-colors: color ease 0.3s, background-color ease 0.3s;
   --transition-bg-color: background-color ease 0.3s;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 body {

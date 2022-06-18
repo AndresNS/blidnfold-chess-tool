@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css";
 
-const ToDoListItem = ({ task, completeTask, deleteTask }) => {
-  const handleComplete = () => completeTask();
+const ToDoListItem = ({ task, toggleCompleteTask, deleteTask }) => {
+  const handleComplete = () => toggleCompleteTask();
   const handleDelete = () => deleteTask();
 
   return (

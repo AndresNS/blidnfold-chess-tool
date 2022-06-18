@@ -8,6 +8,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   transition: var(--transition-bg-color);
+  width: 100%;
 }
 
 .textfield:hover {
