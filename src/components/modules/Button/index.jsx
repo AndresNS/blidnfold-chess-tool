@@ -15,12 +15,12 @@ const Button = ({ text, onClick, className, color }) => {
     }
   };
   return (
-    <div
+    <button
       className={`button ${className} ${getColorClasses(color)}`}
       onClick={handleClick}
     >
       {text}
-    </div>
+    </button>
   );
 };
 
