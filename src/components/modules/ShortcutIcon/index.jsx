@@ -6,7 +6,7 @@ const ShortcutIcon = ({ name, icon, href }) => {
     <a className="shortcut-icon" href={href}>
       <img
         className="shortcut-icon__image"
-        src={`shortcuts/${icon}`}
+        src={require(`/public/shortcuts/${icon}`)}
         alt={name}
       />
     </a>

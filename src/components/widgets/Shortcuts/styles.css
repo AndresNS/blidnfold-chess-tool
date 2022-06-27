@@ -1,7 +1,31 @@
 .shortcuts {
+  margin-top: var(--spacing-lg);
+}
+
+.shortcuts__icons {
   display: flex;
   gap: var(--spacing-xs);
-  margin-top: var(--spacing-lg);
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.shortcuts__open-all {
+  margin-top: var(--spacing-xs);
+  text-align: center;
+}
+
+.shortcuts__open-all button{
+  border: none;
+  cursor: pointer;
+  font-size: var(--text-sm);
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  border-radius: var(--border-radius);
+  background-color: var(--color-gray);
+  color: var(--color-gray-accent-light);
+  transition: var(--transition-colors);
+}
+
+.shortcuts__open-all button:hover{
+  background-color: var(--color-gray-light);
+  color: var(--color-white-dark);
 }
