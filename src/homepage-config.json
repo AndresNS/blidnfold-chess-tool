@@ -22,7 +22,7 @@
       "name": "Whatsapp",
       "href": "https://web.whatsapp.com/",
       "icon": "whatsapp.svg",
-      "enabled": true
+      "enabled": false
     }
   ]
 }
