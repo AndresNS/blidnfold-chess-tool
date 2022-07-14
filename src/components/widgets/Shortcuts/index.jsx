@@ -11,9 +11,11 @@ const shortcuts = config.shortcuts.filter((shortcut) => shortcut.enabled);
 
 const Shortcuts = () => {
   const handleOpenAllClick = () => {
-    shortcuts.map((shortcut) => window.open(shortcut.href, "_blank"));
-    window.open("about:blank", "_self");
-    window.close();
+    shortcuts.map((shortcut, index) =>
+      index !== shortcuts.length - 1
+        ? window.open(shortcut.href, "_blank")
+        : (window.location.href = shortcut.href)
+    );
   };
 
   return (
