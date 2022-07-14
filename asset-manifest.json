@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/homepage/static/css/main.106af373.css",
-    "main.js": "/homepage/static/js/main.7acbd5bd.js",
+    "main.js": "/homepage/static/js/main.107d30e4.js",
     "static/media/twitch.svg": "/homepage/static/media/twitch.7fddca8589f449513c06.svg",
     "static/media/whatsapp.svg": "/homepage/static/media/whatsapp.de1d7d34acb5379df6e1.svg",
     "static/media/chess.png": "/homepage/static/media/chess.eb8f1870947a9138397b.png",
@@ -9,10 +9,10 @@
     "index.html": "/homepage/index.html",
     "static/media/gmail.svg": "/homepage/static/media/gmail.64abb68ca233d2c17fa8.svg",
     "main.106af373.css.map": "/homepage/static/css/main.106af373.css.map",
-    "main.7acbd5bd.js.map": "/homepage/static/js/main.7acbd5bd.js.map"
+    "main.107d30e4.js.map": "/homepage/static/js/main.107d30e4.js.map"
   },
   "entrypoints": [
     "static/css/main.106af373.css",
-    "static/js/main.7acbd5bd.js"
+    "static/js/main.107d30e4.js"
   ]
 }
