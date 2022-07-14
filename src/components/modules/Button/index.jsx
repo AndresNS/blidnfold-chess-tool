@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-const Button = ({ text, onClick, className, color }) => {
+const Button = ({ text, onClick, className, color, size }) => {
   const handleClick = () => onClick();
 
   const getColorClasses = (color) => {
@@ -14,9 +14,20 @@ const Button = ({ text, onClick, className, color }) => {
         return "button--primary";
     }
   };
+
+  const getSizeClasses = (size) => {
+    switch (size) {
+      case "small":
+        return "button--small";
+      default:
+        return "button--normal";
+    }
+  };
   return (
     <button
-      className={`button ${className} ${getColorClasses(color)}`}
+      className={`button ${className} ${getColorClasses(
+        color
+      )} ${getSizeClasses(size)}`}
       onClick={handleClick}
     >
       {text}

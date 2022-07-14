@@ -3,13 +3,21 @@
   border: none;
   cursor: pointer;
   padding: var(--spacing-xs) var(--spacing-md);
-  font-size: var(--text-sm);
   border-radius: var(--border-radius);
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
   transition: var(--transition-bg-color);
   letter-spacing: 0.05rem;
+}
+
+.button--small{
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  font-size: var(--text-xs);
+}
+
+.button--normal{
+  font-size: var(--text-sm);
 }
 
 .button--primary{
