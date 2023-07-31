@@ -7,6 +7,12 @@
       "enabled": true
     },
     {
+      "name": "Youtube",
+      "href": "https://www.youtube.com/",
+      "icon": "youtube.svg",
+      "enabled": true
+    },
+    {
       "name": "Twitch",
       "href": "https://www.twitch.tv/",
       "icon": "twitch.svg",
