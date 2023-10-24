@@ -16,7 +16,7 @@
       "name": "Twitch",
       "href": "https://www.twitch.tv/",
       "icon": "twitch.svg",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "Chess",
