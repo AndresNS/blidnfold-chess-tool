@@ -10,7 +10,7 @@
       "name": "Youtube",
       "href": "https://www.youtube.com/",
       "icon": "youtube.svg",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "Twitch",
