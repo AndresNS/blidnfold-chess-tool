@@ -29,6 +29,12 @@
       "href": "https://web.whatsapp.com/",
       "icon": "whatsapp.svg",
       "enabled": false
+    },
+    {
+      "name": "Notion",
+      "href": "https://www.notion.so/Home-f36a252902074beb856f790962104c7d",
+      "icon": "notion.png",
+      "enabled": true
     }
   ]
 }
